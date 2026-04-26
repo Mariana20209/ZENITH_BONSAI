@@ -1,0 +1,224 @@
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background-color: #ffffff;
+  min-height: 145px;
+  width: 100%;
+}
+
+.logo {
+  text-decoration: none;
+  color: #384233;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  margin-left: 10rem; /* aumenta este número para moverlo más a la derecha */
+}
+
+.nav {
+  display: flex;
+  gap: 2.5rem;
+  margin-right: 10rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #565f51;
+  font-size: 1.2rem;
+  padding-bottom: 3px; /* siempre tiene el mismo espacio */
+  border-bottom: 1px solid transparent; /* borde invisible por defecto */
+}
+
+.nav a:hover,
+.nav a.active {
+  border-bottom: 1px solid #565f51; /* solo cambia el color del borde */
+}
+/* Hero */
+.hero-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 80vh;
+  border-top: 1px solid #ece9e3;
+}
+
+.hero-content {
+  padding: 6rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.hero-content h1 {
+  font-size: 5.5rem;
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  color: #2e3a2b; /*color del texto del hero*/
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+.philosophy-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 6rem 3rem;
+}
+.philosophy-content h1 {
+  font-size: 5rem; /* cambia este número */
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.philosophy-content p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #2c3627;
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-weight: lighter; /*Fuente más ligera para el botón*/
+  width: fit-content;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #303a2d;
+}
+
+/* Gallery */
+.gallery-page {
+  padding: 4rem 3rem;
+}
+
+.gallery-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.gallery-header h1 {
+  font-size: 5.5rem; /* cambia este número */
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: #2c2c2c;
+}
+
+.gallery-header p {
+  font-size: 1.2rem; /* cambia este número */
+  color: #73735e;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.gallery-card {
+  aspect-ratio: 1 / 1;
+  background-color: #fafaf8;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+}
+
+.gallery-card-image {
+  display: none;
+}
+
+.gallery-card p {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0;
+  padding: 0;
+}
+.gallery-card:hover {
+    transform: scale(1.02);
+}
+/* Reservations */
+.content-section {
+  padding: 4rem 3rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.content-section h1 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.content-section p {
+  color: #555;
+  margin-bottom: 2.5rem;
+}
+
+.form-container {
+  background-color: #fafaf8;
+  border: 1px solid #ddd;
+  padding: 2.5rem;
+  border-radius: 4px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  font-size: 0.95rem;
+  color: #2c2c2c;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 0.8rem 1rem;
+  border: 1px solid #ddd;
+  background-color: #ffffff;
+  font-size: 1rem;
+  font-family: inherit;
+  border-radius: 2px;
+  width: 100%;
+}
+
+.btn-block {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+/*Footer*/
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  border-top: 1px solid #ddd;
+  color: #888;
+  margin-top: 4rem;
+}
